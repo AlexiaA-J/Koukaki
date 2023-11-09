@@ -10,6 +10,14 @@
   animation: flower-rotation 20s linear infinite;
 }
 
+#studio h2::before, #studio h2::after {
+  animation: flower-rotation 20s linear infinite;
+}
+
+footer::before, footer::after {
+  animation: flower-rotation 20s linear infinite;
+}
+
 .story h2::after {
   height: 155px;
 }
