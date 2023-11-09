@@ -1,10 +1,26 @@
 // Front-page layout
 
 @keyframes flower-rotation {
-    0% { 
+    from { 
       transform: rotate(0); 
     }
-    100% { 
+    to { 
       transform: rotate(360deg);
     }
   }
+
+.story {
+  h2{
+    &::after {
+        height: 155px;
+        animation: flower-rotation 20s linear infinite;
+    }
+    }
+
+  &__article {
+    &::after {
+        height: 188px;
+        animation: flower-rotation 20s linear infinite;
+    }
+  }
+}
