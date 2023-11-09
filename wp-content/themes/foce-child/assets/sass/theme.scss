@@ -1,4 +1,4 @@
-// Front-page layout
+// Flowers Rotation
 
 @keyframes flower-rotation {
     from { 
@@ -9,18 +9,23 @@
     }
   }
 
-.story {
+.story h2::after, .story__article::after{
+        animation: flower-rotation 20s linear infinite;
+}
+
+
+// Flower HTML resizing
+
+.story{
   h2{
     &::after {
         height: 155px;
-        animation: flower-rotation 20s linear infinite;
     }
-    }
+  }
 
   &__article {
     &::after {
         height: 188px;
-        animation: flower-rotation 20s linear infinite;
     }
   }
 }

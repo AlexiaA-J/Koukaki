@@ -6,11 +6,13 @@
     transform: rotate(360deg);
   }
 }
+.story h2::after, .story__article::after {
+  animation: flower-rotation 20s linear infinite;
+}
+
 .story h2::after {
   height: 155px;
-  animation: flower-rotation 20s linear infinite;
 }
 .story__article::after {
   height: 188px;
-  animation: flower-rotation 20s linear infinite;
 }/*# sourceMappingURL=theme.css.map */
