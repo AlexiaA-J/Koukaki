@@ -14,7 +14,7 @@
   animation: flower-rotation 20s linear infinite;
 }
 
-footer::before, footer::after {
+.site-footer::before, .site-footer::after {
   animation: flower-rotation 20s linear infinite;
 }
 
@@ -23,4 +23,18 @@ footer::before, footer::after {
 }
 .story__article::after {
   height: 188px;
+}
+
+#studio h2::before {
+  height: 203px;
+}
+#studio h2::after {
+  height: 109px;
+}
+
+.site-footer::before {
+  height: 155px;
+}
+.site-footer::after {
+  height: 173px;
 }/*# sourceMappingURL=theme.css.map */

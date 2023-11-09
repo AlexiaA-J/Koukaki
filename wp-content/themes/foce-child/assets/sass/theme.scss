@@ -19,7 +19,7 @@
     }
   }
   
-footer {
+.site-footer {
     &::before, &::after {
       animation: flower-rotation 20s linear infinite;
     }
@@ -39,5 +39,26 @@ footer {
     &::after {
         height: 188px;
     }
+  }
+}
+
+#studio{
+  h2{
+    &::before {
+        height: 203px;
+    }   
+
+    &::after {
+        height: 109px;
+    }
+    }
+}
+
+.site-footer{
+  &::before {
+        height: 155px;
+    }
+  &::after {
+        height: 173px;
   }
 }
