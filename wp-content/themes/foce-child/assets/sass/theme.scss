@@ -1,10 +1,12 @@
-// Flowers Rotation
+// FLOWERS
+
+//Flower rotation
 
 @keyframes flower-rotation {
-    from { 
+    0% { 
       transform: rotate(0); 
     }
-    to { 
+    100% { 
       transform: rotate(360deg);
     }
   }
@@ -62,3 +64,42 @@
         height: 173px;
   }
 }
+
+// FADE INS
+
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+
+ @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(40%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+
+// Fade in Hero header
+
+// Down
+
+.banner{
+    animation: fadeInDown 1s;
+}
+
+// Up
+
+#logo{
+        animation: fadeInUp 1s;
+}
+
