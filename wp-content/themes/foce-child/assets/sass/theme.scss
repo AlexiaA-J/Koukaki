@@ -1,3 +1,23 @@
+/* SUMMARY
+
+-FLOWERS
+=> Flowers rotation
+=> Flower HTML resizing
+
+-FADE INS
+=> Keyframes
+=> Down
+=> Up
+
+-HEADER
+=> Video
+
+
+*/
+
+
+
+
 // FLOWERS
 
 //Flower rotation
@@ -67,6 +87,8 @@
 
 // FADE INS
 
+//Keyframes
+
 @keyframes fadeInDown {
   0% {
      opacity: 0;
@@ -100,8 +122,6 @@
  }
  }
 
-// Fade in Hero header
-
 // Down
 
 .banner{
@@ -111,6 +131,7 @@
 // Up
 
 #logo{
+  position: sticky;
   animation: fadeInUp 1s;
 }
 
@@ -125,3 +146,15 @@
 .site-footer{
   animation: fadeInUp 1s;
 } */
+
+
+// HEADER
+
+// Video
+
+#header_video{
+	position: absolute;
+  @media (max-width: 768px) {
+      display: none;
+    }
+}

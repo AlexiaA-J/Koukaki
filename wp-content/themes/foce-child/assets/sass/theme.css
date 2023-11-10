@@ -1,3 +1,19 @@
+/* SUMMARY
+
+-FLOWERS
+=> Flowers rotation
+=> Flower HTML resizing
+
+-FADE INS
+=> Keyframes
+=> Down
+=> Up
+
+-HEADER
+=> Video
+
+
+*/
 @keyframes flower-rotation {
   0% {
     transform: rotate(0);
@@ -74,6 +90,7 @@
 }
 
 #logo {
+  position: sticky;
   animation: fadeInUp 1s;
 }
 
@@ -87,4 +104,12 @@
 
 .site-footer{
   animation: fadeInUp 1s;
-} *//*# sourceMappingURL=theme.css.map */
+} */
+#header_video {
+  position: absolute;
+}
+@media (max-width: 768px) {
+  #header_video {
+    display: none;
+  }
+}/*# sourceMappingURL=theme.css.map */
