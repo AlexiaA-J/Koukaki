@@ -5,6 +5,9 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
+            <video id="header_video" autoplay loop>
+                <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/studio_koukaki.mp4'; ?> " type="video/mp4">
+            </video>
             <img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
         </section>
         <section id="#story" class="story">
