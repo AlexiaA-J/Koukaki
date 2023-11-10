@@ -3,29 +3,29 @@
 //Flower rotation
 
 @keyframes flower-rotation {
-    0% { 
-      transform: rotate(0); 
-    }
-    100% { 
-      transform: rotate(360deg);
-    }
+  0% { 
+    transform: rotate(0); 
   }
+  100% { 
+    transform: rotate(360deg);
+  }
+}
 
 .story h2::after, .story__article::after {
-    animation: flower-rotation 20s linear infinite;
-  }
+  animation: flower-rotation 20s linear infinite;
+}
   
 #studio h2 {
-    &::before, &::after {
-      animation: flower-rotation 20s linear infinite;
-    }
+  &::before, &::after {
+    animation: flower-rotation 20s linear infinite;
   }
+}
   
 .site-footer {
-    &::before, &::after {
-      animation: flower-rotation 20s linear infinite;
-    }
+  &::before, &::after {
+    animation: flower-rotation 20s linear infinite;
   }
+}
 
 
 // Flower HTML resizing
@@ -68,24 +68,24 @@
 // FADE INS
 
 @keyframes fadeInDown {
-    0% {
-       opacity: 0;
-       transform: translateY(-20%);
-    }
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
+  0% {
+     opacity: 0;
+     transform: translateY(-20%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
  } 
 
  @keyframes fadeInUp {
     0% {
        opacity: 0;
-       transform: translateY(40%);
+       transform: translate3d(0, 40%, 0);
     }
     100% {
        opacity: 1;
-       transform: translateY(0);
+       transform: translate3d(0, 0, 0);
     }
  } 
 
@@ -94,12 +94,11 @@
 // Down
 
 .banner{
-    animation: fadeInDown 1s;
+  animation: fadeInDown 1s;
 }
 
 // Up
 
 #logo{
-        animation: fadeInUp 1s;
+  animation: fadeInUp 1s;
 }
-
