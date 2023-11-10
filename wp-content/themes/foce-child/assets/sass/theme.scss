@@ -1,26 +1,28 @@
 /* SUMMARY
 
+
+-KEYFRAMES
+=> Rotations
+=> Fade ins
+=> Floating effects
+
 -FLOWERS
 => Flowers rotation
 => Flower HTML resizing
 
--FADE INS
-=> Keyframes
-=> Down
-=> Up
-
 -HEADER
+=> Banner
+=> Logo
 => Video
+
+-OTHERS
 
 
 */
 
+// KEYFRAMES
 
-
-
-// FLOWERS
-
-//Flower rotation
+// Rotations
 
 @keyframes flower-rotation {
   0% { 
@@ -30,6 +32,60 @@
     transform: rotate(360deg);
   }
 }
+
+// Fade ins
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translate3d(0, -20%, 0);
+  }
+  100% {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+  }
+ } 
+
+ @keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     transform: translate3d(0, 80%, 0);
+  }
+  100% {
+     opacity: 1;
+     transform: translate3d(0, 0, 0);
+  }
+ } 
+
+ @keyframes fadeInStory {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+ }
+ 100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+ }
+ }
+
+ // Floating effects
+
+ @keyframes floating-logo {
+  0% {
+    transform: translate3d(0, 0, 0);
+ }
+ 50% {
+    transform: translate3d(0, -5%, 0);
+ }
+ 100% {
+    transform: translate3d(0, 0, 0);
+ }
+}
+
+
+// FLOWERS
+
+//Flower rotation
 
 .story h2::after, .story__article::after {
   animation: flower-rotation 20s linear infinite;
@@ -85,69 +141,31 @@
   }
 }
 
-// FADE INS
+// HEADER
 
-//Keyframes
-
-@keyframes fadeInDown {
-  0% {
-     opacity: 0;
-     transform: translate3d(0, -20%, 0);
-  }
-  100% {
-     opacity: 1;
-     transform: translate3d(0, 0, 0);
-  }
- } 
-
- @keyframes fadeInUp {
-  0% {
-     opacity: 0;
-     transform: translate3d(0, 80%, 0);
-  }
-  100% {
-     opacity: 1;
-     transform: translate3d(0, 0, 0);
-  }
- } 
-
- @keyframes fadeInStory {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 20%, 0);
- }
- 100% {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
- }
- }
-
-// Down
+// Banner
 
 .banner{
   animation: fadeInDown 1s;
 }
 
-// Up
+// Logo
 
 #logo{
   position: sticky;
   animation: fadeInUp 1s, floating-logo 6s ease-in-out 1s infinite;
 }
 
-// Floating effect on logo
+// Video
 
-@keyframes floating-logo {
-  0% {
-    transform: translate3d(0, 0, 0);
- }
- 50% {
-    transform: translate3d(0, -5%, 0);
- }
- 100% {
-    transform: translate3d(0, 0, 0);
- }
+#header_video{
+	position: absolute;
+  @media (max-width: 768px) {
+      display: none;
+    }
 }
+
+// OTHERS
 
 /* .story{
   animation: fadeInStory 1s;
@@ -161,14 +179,3 @@
   animation: fadeInUp 1s;
 } */
 
-
-// HEADER
-
-// Video
-
-#header_video{
-	position: absolute;
-  @media (max-width: 768px) {
-      display: none;
-    }
-}
