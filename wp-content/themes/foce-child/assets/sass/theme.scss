@@ -197,10 +197,14 @@
   animation: fadeInUp 1s;
 } */
 
-// FOOTER
+// FOOTER avec section Oscars
+
+.site-footer::before {
+  top: 1em;
+}
 
 .site-footer::after{
-	bottom: 28.8em;
+	bottom: 46em;
 }
 
 .site-footer ul::after{
@@ -209,8 +213,10 @@
 
 .site-footer{
 	display: block;
-	padding-top: 11em;
-  margin-bottom: 1em;
+  padding-top: 13em;
+  margin-bottom:0;
+  padding-bottom: 40px;
+
 }
 
 .site-footer ul{
@@ -224,10 +230,16 @@
   justify-content: center;
 
   h3{
+    padding: 80px 80px;
+    background-size: 800px 300px;
     background-image: url("../images/Rectangle_23.png");
+    line-height: normal;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
   }
 
   img{
     object-fit: contain;
+    margin-left: -48px;
   }
 }
