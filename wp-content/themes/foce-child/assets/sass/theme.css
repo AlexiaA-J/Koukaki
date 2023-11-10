@@ -76,10 +76,15 @@
   animation: flower-rotation 20s linear infinite;
 }
 
-.site-footer::before, .site-footer::after {
+.site-footer ul::after {
   animation: flower-rotation 20s linear infinite;
 }
 
+/* .site-footer {
+  &::before, &::after {
+    animation: flower-rotation 20s linear infinite;
+  }
+} */
 .story h2::after {
   height: 155px;
 }
@@ -94,13 +99,18 @@
   height: 109px;
 }
 
-.site-footer::before {
-  height: 155px;
-}
-.site-footer::after {
-  height: 173px;
+.site-footer ul::after {
+  height: 646px;
 }
 
+/* .site-footer{
+  &::before {
+        height: 155px;
+    }
+  &::after {
+        height: 173px;
+  }
+} */
 .banner {
   animation: fadeInDown 1s;
 }
@@ -129,4 +139,7 @@
 
 .site-footer{
   animation: fadeInUp 1s;
-} *//*# sourceMappingURL=theme.css.map */
+} */
+.site-footer::before, .site-footer::after {
+  display: none;
+}/*# sourceMappingURL=theme.css.map */
