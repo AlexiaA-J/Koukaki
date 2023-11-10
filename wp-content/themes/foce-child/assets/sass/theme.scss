@@ -105,11 +105,11 @@
   }
 }
   
-/* .site-footer {
+.site-footer {
   &::before, &::after {
     animation: flower-rotation 20s linear infinite;
   }
-} */
+}
 
 
 // Flower HTML resizing
@@ -148,14 +148,14 @@
   }
 }
 
-/* .site-footer{
+.site-footer{
   &::before {
         height: 155px;
     }
   &::after {
         height: 173px;
   }
-} */
+}
 
 // HEADER
 
@@ -195,13 +195,24 @@
   animation: fadeInUp 1s;
 } */
 
-// OSCARS SECTION
-
 // FOOTER
 
+.site-footer::after{
+	bottom: 28.8em;
+}
+
+.site-footer ul::after{
+	bottom: -30.5em;
+}
+
 .site-footer{
-  &::before, &::after{
-    display: none;
-  }
+	display: block;
+	overflow: visible;
+	padding-top: 11em;
+	margin-bottom: 40em;
+}
+
+.site-footer ul{
+	margin-top : 280px;
 }
 

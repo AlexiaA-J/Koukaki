@@ -80,11 +80,10 @@
   animation: flower-rotation 20s linear infinite;
 }
 
-/* .site-footer {
-  &::before, &::after {
-    animation: flower-rotation 20s linear infinite;
-  }
-} */
+.site-footer::before, .site-footer::after {
+  animation: flower-rotation 20s linear infinite;
+}
+
 .story h2::after {
   height: 155px;
 }
@@ -103,14 +102,13 @@
   height: 646px;
 }
 
-/* .site-footer{
-  &::before {
-        height: 155px;
-    }
-  &::after {
-        height: 173px;
-  }
-} */
+.site-footer::before {
+  height: 155px;
+}
+.site-footer::after {
+  height: 173px;
+}
+
 .banner {
   animation: fadeInDown 1s;
 }
@@ -140,6 +138,21 @@
 .site-footer{
   animation: fadeInUp 1s;
 } */
-.site-footer::before, .site-footer::after {
-  display: none;
+.site-footer::after {
+  bottom: 28.8em;
+}
+
+.site-footer ul::after {
+  bottom: -30.5em;
+}
+
+.site-footer {
+  display: block;
+  overflow: visible;
+  padding-top: 11em;
+  margin-bottom: 40em;
+}
+
+.site-footer ul {
+  margin-top: 280px;
 }/*# sourceMappingURL=theme.css.map */
