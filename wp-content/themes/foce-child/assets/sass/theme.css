@@ -52,7 +52,17 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate3d(0, 40%, 0);
+    transform: translate3d(0, 80%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInStory {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
   }
   100% {
     opacity: 1;
@@ -65,4 +75,16 @@
 
 #logo {
   animation: fadeInUp 1s;
-}/*# sourceMappingURL=theme.css.map */
+}
+
+/* .story{
+  animation: fadeInStory 1s;
+}
+
+#studio{
+  animation: fadeInUp 1s;
+}
+
+.site-footer{
+  animation: fadeInUp 1s;
+} *//*# sourceMappingURL=theme.css.map */
