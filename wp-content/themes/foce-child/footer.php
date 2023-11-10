@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 
-    <?php get_template_part('templates/oscar-section'); ?>
+    <!--<?php get_template_part('templates/oscar-section'); ?>-->
 
         <ul>
             <li><a href="#">Mentions Légales</a></li>

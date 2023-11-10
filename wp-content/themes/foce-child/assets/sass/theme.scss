@@ -107,11 +107,11 @@
   }
 }
   
-.site-footer {
+/* .site-footer {
   &::before, &::after {
     animation: flower-rotation 20s linear infinite;
   }
-}
+} */
 
 
 // Flower HTML resizing
@@ -150,14 +150,14 @@
   }
 }
 
-.site-footer{
+/* .site-footer{
   &::before {
         height: 155px;
     }
   &::after {
         height: 173px;
   }
-}
+} */
 
 // HEADER
 
@@ -197,7 +197,17 @@
   animation: fadeInUp 1s;
 } */
 
+
+
 // FOOTER avec section Oscars
+
+.site-footer{
+  &::before, &::after{
+    display: none;
+  }
+}
+
+/*
 
 .site-footer::before {
   top: 1em;
@@ -243,3 +253,6 @@
     margin-left: -48px;
   }
 }
+
+*/
+
