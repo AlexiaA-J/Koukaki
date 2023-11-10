@@ -92,11 +92,11 @@
 @keyframes fadeInDown {
   0% {
      opacity: 0;
-     transform: translateY(-20%);
+     transform: translate3d(0, -20%, 0);
   }
   100% {
      opacity: 1;
-     transform: translateY(0);
+     transform: translate3d(0, 0, 0);
   }
  } 
 
@@ -132,7 +132,21 @@
 
 #logo{
   position: sticky;
-  animation: fadeInUp 1s;
+  animation: fadeInUp 1s, floating-logo 6s ease-in-out 1s infinite;
+}
+
+// Floating effect on logo
+
+@keyframes floating-logo {
+  0% {
+    transform: translate3d(0, 0, 0);
+ }
+ 50% {
+    transform: translate3d(0, -5%, 0);
+ }
+ 100% {
+    transform: translate3d(0, 0, 0);
+ }
 }
 
 /* .story{
