@@ -84,7 +84,6 @@
  }
 }
 
-
 // FLOWERS
 
 //Flower rotation
@@ -107,11 +106,11 @@
   }
 }
   
-/* .site-footer {
+.oscars {
   &::before, &::after {
-    animation: flower-rotation 20s linear infinite;
+    animation: flower-rotation 20s linear infinite, 
   }
-} */
+}
 
 
 // Flower HTML resizing
@@ -150,14 +149,14 @@
   }
 }
 
-/* .site-footer{
+.oscars{
   &::before {
         height: 155px;
     }
   &::after {
         height: 173px;
   }
-} */
+}
 
 // HEADER
 
@@ -197,8 +196,64 @@
   animation: fadeInUp 1s;
 } */
 
+// OSCARS
 
+.oscars{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 10em;
+  @media (max-width: 1192px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  h3{
+    padding: 80px 80px;
+    background-image: url("../images/Rectangle_23.png");
+    line-height: normal;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    @media (max-width: 1192px) {
+      display: flex;
+      justify-content: center;
+    }
+    @media (max-width: 768px) {
+      padding: 70px 70px;
+    }
+    
+    span{
+      display: inline-block;
+      width: 668px;
+      @media (max-width: 1192px) {
+        padding-left: 20px;
+      }
+      @media (max-width: 768px) {
+        width: 320px;
+        font-size: 1.5rem;
+      }
+    }
+  }
 
+  img{
+    object-fit: contain;
+    margin-left: -48px;
+    width: 278px;
+    }
+
+    &::before {
+      content: url("../images/Sunflower.png");
+      position: absolute;
+      left: 4em;
+      top: 0em;
+    }
+    
+  &::after {
+      content: url("../images/orchid.png");
+      position: absolute;
+      right: -4em;
+      bottom: 25em;
+  }
+}
 // FOOTER avec section Oscars
 
 .site-footer{
@@ -206,53 +261,3 @@
     display: none;
   }
 }
-
-/*
-
-.site-footer::before {
-  top: 1em;
-}
-
-.site-footer::after{
-	bottom: 46em;
-}
-
-.site-footer ul::after{
-	bottom: -30.5em;
-}
-
-.site-footer{
-	display: block;
-  padding-top: 13em;
-  margin-bottom:0;
-  padding-bottom: 40px;
-
-}
-
-.site-footer ul{
-	margin-top : 280px;
-}
-
-// Oscars Section
-
-.oscars{
-  display: flex;
-  justify-content: center;
-
-  h3{
-    padding: 80px 80px;
-    background-size: 800px 300px;
-    background-image: url("../images/Rectangle_23.png");
-    line-height: normal;
-    text-align: left;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-  }
-
-  img{
-    object-fit: contain;
-    margin-left: -48px;
-  }
-}
-
-*/
-

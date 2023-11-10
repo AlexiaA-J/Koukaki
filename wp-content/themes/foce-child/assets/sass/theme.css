@@ -82,11 +82,10 @@
   animation: flower-rotation 20s linear infinite;
 }
 
-/* .site-footer {
-  &::before, &::after {
-    animation: flower-rotation 20s linear infinite;
-  }
-} */
+.oscars::before, .oscars::after {
+  animation: flower-rotation 20s linear infinite;
+}
+
 .story h2::after {
   height: 155px;
 }
@@ -105,14 +104,13 @@
   height: 646px;
 }
 
-/* .site-footer{
-  &::before {
-        height: 155px;
-    }
-  &::after {
-        height: 173px;
-  }
-} */
+.oscars::before {
+  height: 155px;
+}
+.oscars::after {
+  height: 173px;
+}
+
 .banner {
   animation: fadeInDown 1s;
 }
@@ -142,55 +140,70 @@
 .site-footer{
   animation: fadeInUp 1s;
 } */
-.site-footer::before, .site-footer::after {
-  display: none;
-}
-
-/*
-
-.site-footer::before {
-  top: 1em;
-}
-
-.site-footer::after{
-	bottom: 46em;
-}
-
-.site-footer ul::after{
-	bottom: -30.5em;
-}
-
-.site-footer{
-	display: block;
-  padding-top: 13em;
-  margin-bottom:0;
-  padding-bottom: 40px;
-
-}
-
-.site-footer ul{
-	margin-top : 280px;
-}
-
-// Oscars Section
-
-.oscars{
+.oscars {
+  position: relative;
   display: flex;
   justify-content: center;
-
-  h3{
-    padding: 80px 80px;
-    background-size: 800px 300px;
-    background-image: url("../images/Rectangle_23.png");
-    line-height: normal;
-    text-align: left;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-  }
-
-  img{
-    object-fit: contain;
-    margin-left: -48px;
+  padding-top: 10em;
+}
+@media (max-width: 1192px) {
+  .oscars {
+    flex-direction: column;
+    align-items: center;
   }
 }
+.oscars h3 {
+  padding: 80px 80px;
+  background-image: url("../images/Rectangle_23.png");
+  line-height: normal;
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1192px) {
+  .oscars h3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .oscars h3 {
+    padding: 70px 70px;
+  }
+}
+.oscars h3 span {
+  display: inline-block;
+  width: 668px;
+}
+@media (max-width: 1192px) {
+  .oscars h3 span {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .oscars h3 span {
+    width: 320px;
+    font-size: 1.5rem;
+  }
+}
+.oscars img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: -48px;
+  width: 278px;
+}
+.oscars::before {
+  content: url("../images/Sunflower.png");
+  position: absolute;
+  left: 4em;
+  top: 0em;
+}
+.oscars::after {
+  content: url("../images/orchid.png");
+  position: absolute;
+  right: -4em;
+  bottom: 25em;
+}
 
-*//*# sourceMappingURL=theme.css.map */
+.site-footer::before, .site-footer::after {
+  display: none;
+}/*# sourceMappingURL=theme.css.map */
