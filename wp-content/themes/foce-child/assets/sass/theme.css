@@ -17,6 +17,8 @@
 
 -OTHERS
 
+-FOOTER
+=>Oscars
 
 */
 @keyframes flower-rotation {
@@ -148,11 +150,22 @@
 
 .site-footer {
   display: block;
-  overflow: visible;
   padding-top: 11em;
-  margin-bottom: 40em;
+  margin-bottom: 1em;
 }
 
 .site-footer ul {
   margin-top: 280px;
+}
+
+.oscars {
+  display: flex;
+  justify-content: center;
+}
+.oscars h3 {
+  background-image: url("../images/Rectangle_23.png");
+}
+.oscars img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=theme.css.map */

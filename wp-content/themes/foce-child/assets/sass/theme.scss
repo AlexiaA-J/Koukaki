@@ -17,6 +17,8 @@
 
 -OTHERS
 
+-FOOTER
+=>Oscars
 
 */
 
@@ -207,12 +209,25 @@
 
 .site-footer{
 	display: block;
-	overflow: visible;
 	padding-top: 11em;
-	margin-bottom: 40em;
+  margin-bottom: 1em;
 }
 
 .site-footer ul{
 	margin-top : 280px;
 }
 
+// Oscars Section
+
+.oscars{
+  display: flex;
+  justify-content: center;
+
+  h3{
+    background-image: url("../images/Rectangle_23.png");
+  }
+
+  img{
+    object-fit: contain;
+  }
+}
