@@ -26,6 +26,7 @@ get_header();
             $characters_query = new WP_Query($args);
             ?>
             <article id="characters">
+            <?php get_template_part('templates/characters-section'); ?>
                 <!--<div class="main-character">
                     <h3>Les personnages</h3>
                     <?php
