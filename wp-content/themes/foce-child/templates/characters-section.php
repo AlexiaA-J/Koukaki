@@ -7,8 +7,8 @@
         <h4>Kawaneko</h4>
       </div>
       <div class="swiper-slide">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orenjiiro.png'; ?> " alt="personnage de chat roux nommé Orenjiiro">
-        <h4>Orenjiiro</h4>
+        <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/orenjiiro.png'; ?> " alt="personnage de chat roux nommé Onejiiro">
+        <h4>Onejiiro</h4>
       </div>
       <div class="swiper-slide">
         <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/pinku.png'; ?> " alt="personnage de chat blanc nommé Pinku">
