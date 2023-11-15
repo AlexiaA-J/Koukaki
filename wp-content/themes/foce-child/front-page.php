@@ -26,7 +26,7 @@ get_header();
             $characters_query = new WP_Query($args);
             ?>
             <article id="characters">
-                <div class="main-character">
+                <!--<div class="main-character">
                     <h3>Les personnages</h3>
                     <?php
                     $main_character = $characters_query->posts[0];
@@ -49,7 +49,7 @@ get_header();
                         echo '</figure>';
                     }
                     ?>
-                </div>
+                </div>-->
             </article>
             <article id="place">
                 <div>
