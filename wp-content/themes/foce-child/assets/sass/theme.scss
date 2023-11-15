@@ -255,6 +255,23 @@
       bottom: 25em;
   }
 }
+
+// CHARACTERS
+
+.story {
+  #characters {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+
+    .swiper {
+      width: 1440px;
+      height: 300px;
+      padding-left: 100px;
+    }    
+  }
+}
+
 // FOOTER
 
 .site-footer{
