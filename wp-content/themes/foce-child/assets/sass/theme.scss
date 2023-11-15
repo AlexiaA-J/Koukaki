@@ -268,6 +268,14 @@
       width: 1440px;
       height: 300px;
       padding-left: 100px;
+
+      &-slide{
+        margin-right: 40px;
+        img{
+          display: block;
+          width: 100%;
+        }
+      }
     }    
   }
 }

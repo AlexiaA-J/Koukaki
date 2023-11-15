@@ -215,6 +215,13 @@
   height: 300px;
   padding-left: 100px;
 }
+.story #characters .swiper-slide {
+  margin-right: 40px;
+}
+.story #characters .swiper-slide img {
+  display: block;
+  width: 100%;
+}
 
 .site-footer::before, .site-footer::after {
   display: none;
