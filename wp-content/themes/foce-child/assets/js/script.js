@@ -6,26 +6,11 @@ const swiper = new Swiper('.swiper', {
   centeredSlides:true,
   spaceBetween:10,
   coverflowEffect: {
-    rotate:20,
+    rotate:50,
     stretch:0,
-    depth:70,
+    depth:10,
     modifier:1,
-    slideshadows:false,
+    slideShadows:false,
 },
 loop:true,
 });
-
-/* effect: "coverflow",
-grabCursor:true,
-centeredSlider:true,
-
-coverflowEffect: {
-    rotate:60,
-    stretch:0,
-    depth:100,
-    slideshadows:true,
-},
-slidesPerView:"auto",
-pagination:{
-    el:".swiper-pagination"
-} */
