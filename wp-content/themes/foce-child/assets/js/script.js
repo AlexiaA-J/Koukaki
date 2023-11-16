@@ -1,16 +1,18 @@
 const swiper = new Swiper('.swiper', {
-  pagination:'.swiper-pagination',
+  //pagination:'.swiper-pagination',
   effect: 'coverflow',
   grabCursor:true,
-  slidesPerView: 3,
-  initialSlide: 0,
+  slidesPerView: 5,
+  centeredSlides:true,
+  spaceBetween:10,
   coverflowEffect: {
-    rotate:60,
-    stretch:-40,
-    depth:100,
+    rotate:20,
+    stretch:0,
+    depth:70,
     modifier:1,
-    slideshadows:true,
-}
+    slideshadows:false,
+},
+loop:true,
 });
 
 /* effect: "coverflow",
