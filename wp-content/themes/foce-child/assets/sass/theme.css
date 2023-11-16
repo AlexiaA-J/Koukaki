@@ -208,19 +208,20 @@
 .story #characters {
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 100px;
-}
-.story #characters .swiper {
-  width: 1440px;
-  height: 300px;
-  padding-left: 100px;
-}
-.story #characters .swiper-slide {
-  margin-right: 40px;
-}
-.story #characters .swiper-slide img {
-  display: block;
   width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1192px) {
+  .story #characters h3 {
+    align-self: center;
+  }
+}
+.story #characters .mySwiper {
+  align-self: center;
+}
+.story #characters .mySwiper .swiper {
+  width: 2000px;
+  height: 500px;
 }
 
 .site-footer::before, .site-footer::after {
