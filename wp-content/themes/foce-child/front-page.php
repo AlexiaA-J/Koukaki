@@ -25,7 +25,7 @@ get_header();
             );
             $characters_query = new WP_Query($args);
             ?>
-            <article id="characters">
+            <!--<article id="characters">
                 <div class="main-character">
                     <h3>Les personnages</h3>
                     <?php
@@ -50,7 +50,8 @@ get_header();
                     }
                     ?>
                 </div>
-            </article>
+            </article>-->
+            <?php get_template_part('templates/characters-section'); ?>
             <article id="place">
                 <div>
                     <h3>Le Lieu</h3>

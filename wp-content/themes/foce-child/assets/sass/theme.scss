@@ -255,6 +255,31 @@
       bottom: 25em;
   }
 }
+
+// CHARACTERS
+
+.story {
+  #characters {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    h3{
+      @media (max-width: 1192px) {
+        align-self: center;
+      }
+    }
+    .mySwiper{
+      align-self: center;
+      .swiper {
+        width:2000px;
+        height: 500px;
+        }
+    }    
+  }
+}
+
+
 // FOOTER
 
 .site-footer{
