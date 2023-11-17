@@ -1,3 +1,5 @@
+// CHARACTERS SWIPER
+
 const swiper = new Swiper('.swiper', {
   //pagination:'.swiper-pagination',
   effect: 'coverflow',
