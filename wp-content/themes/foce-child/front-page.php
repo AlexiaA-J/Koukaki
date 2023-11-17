@@ -8,7 +8,9 @@ get_header();
             <video id="header_video" autoplay loop>
                 <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/studio_koukaki.mp4'; ?> " type="video/mp4">
             </video>
-            <img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            <div class=banner__container data-0="transform: translateY(0px);"data-500="transform: translateY(250px);">
+                <img id="logo" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            </div>
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
