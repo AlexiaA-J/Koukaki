@@ -15,7 +15,8 @@
 => Logo
 => Video
 
--OTHERS
+-STORY
+=> Characters
 
 -OSCARS SECTION
 
@@ -183,9 +184,9 @@
     }
 }
 
-// OTHERS
+// STORY
 
-/* .story{
+.story{
   animation: fadeInStory 1s;
 }
 
@@ -193,13 +194,33 @@
   animation: fadeInUp 1s;
 }
 
-.site-footer{
-  animation: fadeInUp 1s;
-} */
+// Characters
+
+.story {
+  #characters {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    h3{
+      @media (max-width: 1192px) {
+        align-self: center;
+      }
+    }
+    .mySwiper{
+      align-self: center;
+      .swiper {
+        width:2000px;
+        height: 500px;
+        }
+    }    
+  }
+}
 
 // OSCARS
 
 .oscars{
+  animation: fadeInUp 1s;
   position: relative;
   display: flex;
   justify-content: center;
@@ -256,33 +277,10 @@
   }
 }
 
-// CHARACTERS
-
-.story {
-  #characters {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    overflow: hidden;
-    h3{
-      @media (max-width: 1192px) {
-        align-self: center;
-      }
-    }
-    .mySwiper{
-      align-self: center;
-      .swiper {
-        width:2000px;
-        height: 500px;
-        }
-    }    
-  }
-}
-
-
 // FOOTER
 
 .site-footer{
+  animation: fadeInUp 1s;
   &::before, &::after{
     display: none;
   }
