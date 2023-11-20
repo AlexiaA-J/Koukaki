@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   //pagination:'.swiper-pagination',
   effect: 'coverflow',
   grabCursor:true,
-  slidesPerView: 5,
+  slidesPerView: 'auto',
   centeredSlides:true,
   spaceBetween:10,
   coverflowEffect: {
