@@ -164,6 +164,19 @@
   width: 2000px;
   height: 500px;
 }
+.story #place {
+  background-image: url("../images/Studio_Koukaki-image_place.png");
+}
+.story #place .big_cloud {
+  filter: blur(10px);
+  position: absolute;
+  top: 1400px;
+}
+.story #place .little_cloud {
+  filter: blur(10px);
+  position: absolute;
+  top: 1580px;
+}
 
 .oscars {
   animation: fadeInUp 1s;
@@ -235,4 +248,8 @@
 }
 .site-footer::before, .site-footer::after {
   display: none;
+}
+
+span {
+  display: inline-block;
 }/*# sourceMappingURL=theme.css.map */
