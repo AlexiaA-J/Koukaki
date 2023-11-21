@@ -57,8 +57,8 @@ get_header();
             <article id="place">
                 <div>
                     <h3> <span data-1700="transform: translateY(50px); opacity:0"data-1900="transform: translateY(0px); opacity:1">Le Lieu</span></h3>
-                        <img data-1400="left:1300px; opacity:0" data-top="left:400px; opacity:1" class="big_cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'; ?> " alt="Image d'un gros nuage">
-                        <img data-1400="left:1050px; opacity:0" data-top="left:200px; opacity:1" class="little_cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'; ?> " alt="Image d'un petit nuage">
+                        <img data-1400="left:1100px; opacity:0" data-top="left:800px; opacity:1" class="big_cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/big_cloud.png'; ?> " alt="Image d'un gros nuage">
+                        <img data-1400="left:850px; opacity:0" data-top="left:550px; opacity:1" class="little_cloud" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/little_cloud.png'; ?> " alt="Image d'un petit nuage">
                     <p><?php echo get_theme_mod('place'); ?></p>
                 </div>
 
