@@ -217,22 +217,28 @@
     }
     .mySwiper{
       align-self: center;
+      padding-left: 80px;
       .swiper {
         width:2000px;
         height: 500px;
         }
     }    
   }
+
+  // Clouds parallax
+
   #place {
     background-image: url("../images/Studio_Koukaki-image_place.png");
     .big_cloud {
       filter: blur(10px);
 	    position: absolute;
+      left: 900px;
 	    top: 1400px;
     }
     .little_cloud {
       filter: blur(10px);
       position: absolute;
+      left: 800px;
       top:1580px;
     }
   }
