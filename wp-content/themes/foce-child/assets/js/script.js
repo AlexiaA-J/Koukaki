@@ -16,3 +16,17 @@ const swiper = new Swiper('.swiper', {
 },
 loop:true,
 });
+
+// SKROLLJR
+
+function initializeSkrollrOnDesktop() {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if (screenWidth > 1191) {
+      var s = skrollr.init({
+          forceHeight: false
+      });
+  }
+}
+
+window.addEventListener('load', initializeSkrollrOnDesktop);
