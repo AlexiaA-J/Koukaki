@@ -11,6 +11,7 @@
 => Flower HTML resizing
 
 -MENU
+=> Menu elements style
 
 -HEADER
 => Banner
@@ -193,20 +194,32 @@
   background-color: black;
   margin: 8px 0;
 }
+@media (max-width: 699px) {
+  .burger-icon span {
+    display: none;
+  }
+}
 
 #openBtn {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-@media (max-width: 700px) {
-  #openBtn {
+
+.site-title {
+  z-index: 2;
+}
+
+@media (min-width: 699.5px) {
+  .menu-mobile {
     display: none;
   }
 }
 
-.site-title {
-  z-index: 2;
+@media (max-width: 1192px) {
+  .menu_animations {
+    display: none;
+  }
 }
 
 .logo_burger {
