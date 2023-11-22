@@ -105,10 +105,10 @@
 
 // OPEN/CLOSE OF MENU
 
-@keyframes upMenu{
+@keyframes menuUp{
 	from {
 		opacity: 1;
-		transform: translate3d(0, 20%, 0);
+		transform: translate3d(0, 0%, 0);
 	}
 	to {
 		opacity: 0;
@@ -207,7 +207,7 @@ $background-color_3: #FFD5A2;
 	background-color: $background-color_3;
 	padding-top: 60px;
 	transition: all 1s ease;
-	animation: upMenu 1s;
+	animation: menuUp 1s;
 	overflow: hidden;
 	a {
 		text-decoration: none;
