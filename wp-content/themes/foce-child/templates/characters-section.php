@@ -1,5 +1,5 @@
 <article id="characters">
-    <h3> <span data-600="transform: translateY(150px); opacity:0"data-1000="transform: translateY(0px); opacity:1">Les personnages </span></h3>
+    <h3> <span data-600="transform: translateY(150px); opacity:0" data-1000="transform: translateY(0px); opacity:1">Les personnages </span></h3>
     <div class="mySwiper">
       <div class="swiper">
         <div class="swiper-wrapper">
