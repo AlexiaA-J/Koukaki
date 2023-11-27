@@ -15,7 +15,7 @@ function closeMenu() {
    menuBurger.classList.remove("active");
 }
 
-const ulMenu = document.querySelector(".burger");
+// const ulMenu = document.querySelector(".burger");
 
 document.querySelectorAll(".lien_burger").forEach(n => n.addEventListener("click", () => {
    menuBurger.classList.remove("active");
