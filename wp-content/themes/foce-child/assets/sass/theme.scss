@@ -93,13 +93,13 @@
 
 @keyframes floating-cat{
 	0% {
-		transform: translateY(0);
+		transform: translate3d(0);
 	}
 	50% {
-		transform: translateY(-15px);
+		transform: translate3d(-15px);
 	}
 	100%{
-		transform: translateY(0);
+		transform: translate3d(0);
 	}
 }
 
