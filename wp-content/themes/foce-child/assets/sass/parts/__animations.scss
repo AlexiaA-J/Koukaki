@@ -1,0 +1,179 @@
+// Rotations
+
+@keyframes flower-rotation {
+    0% { 
+      transform: rotate(0); 
+    }
+    100% { 
+      transform: rotate(360deg);
+    }
+  }
+  
+  // Fade ins
+  
+  @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translate3d(0, -20%, 0);
+    }
+    100% {
+       opacity: 1;
+       transform: translate3d(0, 0, 0);
+    }
+   } 
+  
+   @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translate3d(0, 80%, 0);
+    }
+    100% {
+       opacity: 1;
+       transform: translate3d(0, 0, 0);
+    }
+   } 
+  
+   @keyframes fadeInStory {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 20%, 0);
+   }
+   100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+   }
+  
+   // Floating effects
+  
+   @keyframes floating-logo {
+    0% {
+      transform: translate3d(0, 0, 0);
+   }
+   50% {
+      transform: translate3d(0, -5%, 0);
+   }
+   100% {
+      transform: translate3d(0, 0, 0);
+   }
+  }
+  
+  /* Cats floating effect */
+  
+  @keyframes floating-cat{
+      0% {
+          transform: translate3d(0);
+      }
+      50% {
+          transform: translate3d(-15px);
+      }
+      100%{
+          transform: translate3d(0);
+      }
+  }
+  
+  // OPEN/CLOSE OF MENU
+  
+  @keyframes menuUp{
+      from {
+          opacity: 1;
+          transform: translate3d(0, 0%, 0);
+      }
+      to {
+          opacity: 0;
+          transform: translate3d(0, 0, 0);
+      }
+  }
+  
+  // FLOWERS
+  
+  //Flower rotation
+  
+  .story h2::after, .story__article::after {
+    animation: flower-rotation 20s linear infinite;
+  }
+    
+  #studio h2 {
+    &::before, &::after {
+      animation: flower-rotation 20s linear infinite;
+    }
+  }
+  
+  .site-footer {
+    ul {
+      &::after {
+        animation: flower-rotation 20s linear infinite;
+      }
+    }
+  }
+    
+  .oscars {
+    &::before, &::after {
+      animation: flower-rotation 20s linear infinite, 
+    }
+  }
+  
+  
+  // Flower HTML resizing
+  
+  .story{
+    h2{
+      &::after {
+          height: 155px;
+      }
+    }
+  
+    &__article {
+      &::after {
+          height: 188px;
+      }
+    }
+  }
+  
+  #studio{
+    h2{
+      &::before {
+          height: 203px;
+      }   
+  
+      &::after {
+          height: 109px;
+      }
+      }
+  }
+  
+  .site-footer {
+    ul {
+      &::after {
+        height: 646px;
+      }
+    }
+  }
+  
+  .oscars{
+    &::before {
+          height: 155px;
+      }
+    &::after {
+          height: 173px;
+    }
+  }
+  
+  // FADE IN TITLES
+  
+  .reveal {
+    position: relative;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 5s ease;
+  }
+  
+  .revealScattered {
+    transform: translateY(60px);
+  }
+  
+  .active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease;
+  }

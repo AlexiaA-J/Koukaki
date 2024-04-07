@@ -1,0 +1,10 @@
+.site-footer{
+    animation: fadeInUp 1s;
+    &::before, &::after{
+      display: none;
+    }
+  }
+  
+  span{
+    display: inline-block;
+  }

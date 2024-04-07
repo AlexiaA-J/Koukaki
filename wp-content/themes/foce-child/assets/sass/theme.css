@@ -1,31 +1,3 @@
-/* SUMMARY
-
-
--KEYFRAMES
-=> Rotations
-=> Fade ins
-=> Floating effects
-
--FLOWERS
-=> Flowers rotation
-=> Flower HTML resizing
-
--MENU
-=> Menu elements style
-
--HEADER
-=> Banner
-=> Logo
-=> Video
-
--STORY
-=> Characters
-
--OSCARS SECTION
-
--FOOTER
-
-*/
 @keyframes flower-rotation {
   0% {
     transform: rotate(0);
